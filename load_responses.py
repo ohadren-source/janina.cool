@@ -3,14 +3,6 @@ load_responses.py — Bulk load 108 HR responses into Janina database
 ===================================================================
 Run this once during initialization to populate janina_responses table.
 
-def main():
-    """Main entry point."""
-    # Ensure tables exist before loading
-    import janina_banks
-    janina_banks.ensure_all_tables()
-    
-    parser = argparse.ArgumentParser(
-
 Usage:
     python load_responses.py --file responses.json
     python load_responses.py --file responses.csv
@@ -37,6 +29,7 @@ import argparse
 from typing import List, Dict
 
 import psycopg2
+import janina_banks
 
 logger = logging.getLogger("load_responses")
 logging.basicConfig(level=logging.INFO)
@@ -151,6 +144,7 @@ def validate_responses(responses: List[Dict]) -> bool:
 
 def main():
     """Main entry point."""
+    janina_banks.ensure_all_tables()
     parser = argparse.ArgumentParser(
         description="Bulk load HR responses into Janina database"
     )
