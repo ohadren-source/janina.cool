@@ -1,0 +1,37 @@
+[
+  {
+    "category": "benefits",
+    "query_type": "faq",
+    "keywords": ["vacation", "pto", "time-off"],
+    "response_text": "Our vacation policy allows 15 days PTO annually, accruing 1.25 days per month. Carry-over is allowed up to 5 days into the next year. Please submit requests 2 weeks in advance.",
+    "quality_score": 0.95
+  },
+  {
+    "category": "payroll",
+    "query_type": "faq",
+    "keywords": ["salary", "payment", "direct deposit"],
+    "response_text": "Payroll is processed every other Friday. Direct deposit takes 1-2 business days to appear in your account. If you have questions about your pay stub, contact HR.",
+    "quality_score": 0.90
+  },
+  {
+    "category": "hiring",
+    "query_type": "faq",
+    "keywords": ["job", "apply", "position"],
+    "response_text": "We're always looking for talented people. Check our careers page at sauc-e.com/careers for open positions. Applications are reviewed on a rolling basis.",
+    "quality_score": 0.85
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": ["help", "support", "question"],
+    "response_text": "Cool. Your question has been noted. We'll get back to you when we get back to you. That's how this works.",
+    "quality_score": 0.80
+  },
+  {
+    "category": "compliance",
+    "query_type": "faq",
+    "keywords": ["policy", "rules", "guidelines"],
+    "response_text": "All company policies are documented in the employee handbook. Please review them carefully. Ignorance is not an excuse.",
+    "quality_score": 0.88
+  }
+]
