@@ -60,7 +60,9 @@ except Exception as e:
 def home():
     """Serve the Janina frontend."""
     here = os.path.dirname(os.path.abspath(__file__))
-    return send_file(os.path.join(here, 'janina.cool.html'))
+    html_path = os.path.join(here, 'janina.cool.html')
+    with open(html_path, 'r') as f:
+        return f.read(), 200, {'Content-Type': 'text/html; charset=utf-8'}
 
 
 # ─────────────────────────────────────────────────────────────────────────
