@@ -25,7 +25,7 @@ import logging
 from datetime import datetime
 from typing import Dict, Tuple
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 import psycopg2
 
@@ -50,6 +50,16 @@ try:
     logger.info("✓ All Janina tables initialized")
 except Exception as e:
     logger.error(f"Failed to initialize tables: {e}")
+
+
+# ─────────────────────────────────────────────────────────────────────────
+# Home
+# ─────────────────────────────────────────────────────────────────────────
+
+@app.route('/', methods=['GET'])
+def home():
+    """Serve the Janina frontend."""
+    return send_file('janina.cool.html')
 
 
 # ─────────────────────────────────────────────────────────────────────────
