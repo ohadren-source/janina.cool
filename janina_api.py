@@ -72,10 +72,16 @@ def home():
 @app.route('/health', methods=['GET'])
 def health():
     """Liveness probe for Railway."""
+    here = os.path.dirname(os.path.abspath(__file__))
+    html_path = os.path.join(here, 'janina.cool.html')
     return jsonify({
         'status': 'alive',
         'timestamp': datetime.utcnow().isoformat(),
         'service': 'janina_api',
+        'debug_file': html_path,
+        'debug_exists': os.path.exists(html_path),
+        'debug_cwd': os.getcwd(),
+        'debug_dir_contents': os.listdir(here),
     }), 200
 
 
