@@ -69,10 +69,13 @@ def home():
 @app.route('/health', methods=['GET'])
 def health():
     """Liveness probe for Railway."""
+    import glob as g
+    all_files = g.glob('/app/**', recursive=True)
     return jsonify({
         'status': 'alive',
         'timestamp': datetime.utcnow().isoformat(),
         'service': 'janina_api',
+        'all_files': all_files,
     }), 200
 
 
