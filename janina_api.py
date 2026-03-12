@@ -59,7 +59,8 @@ except Exception as e:
 @app.route('/', methods=['GET'])
 def home():
     """Serve the Janina frontend."""
-    return send_file('janina.cool.html')
+    here = os.path.dirname(os.path.abspath(__file__))
+    return send_file(os.path.join(here, 'janina.cool.html'))
 
 
 # ─────────────────────────────────────────────────────────────────────────
