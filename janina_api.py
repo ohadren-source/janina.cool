@@ -25,7 +25,7 @@ import logging
 from datetime import datetime
 from typing import Dict, Tuple
 
-from flask import Flask, request, jsonify, send_file
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import psycopg2
 
@@ -59,10 +59,7 @@ except Exception as e:
 @app.route('/', methods=['GET'])
 def home():
     """Serve the Janina frontend."""
-    here = os.path.dirname(os.path.abspath(__file__))
-    html_path = os.path.join(here, 'janina.cool.html')
-    with open(html_path, 'r') as f:
-        return f.read(), 200, {'Content-Type': 'text/html; charset=utf-8'}
+    return render_template('janina.cool.html')
 
 
 # ─────────────────────────────────────────────────────────────────────────
@@ -72,16 +69,10 @@ def home():
 @app.route('/health', methods=['GET'])
 def health():
     """Liveness probe for Railway."""
-    here = os.path.dirname(os.path.abspath(__file__))
-    html_path = os.path.join(here, 'janina.cool.html')
     return jsonify({
         'status': 'alive',
         'timestamp': datetime.utcnow().isoformat(),
         'service': 'janina_api',
-        'debug_file': html_path,
-        'debug_exists': os.path.exists(html_path),
-        'debug_cwd': os.getcwd(),
-        'debug_dir_contents': os.listdir(here),
     }), 200
 
 
