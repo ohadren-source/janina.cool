@@ -217,27 +217,6 @@
       color: rgba(255,255,255,0.6);
     }
     
-    /* ── RELIGION ── */
-    #religion-section h2 {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: rgba(255,255,255,0.25);
-      margin-bottom: 20px;
-    }
-
-    #religion-text p {
-      font-size: 1rem;
-      line-height: 2;
-      color: rgba(255,255,255,0.55);
-    }
-
-    #religion-text .religion-close {
-      margin-top: 20px;
-      color: rgba(255,255,255,0.35);
-      font-size: 0.9rem;
-    }
-
     /* ── FOOTER ── */
     footer {
       text-align: center;
@@ -290,26 +269,6 @@
       <textarea id="message" placeholder="Your message..."></textarea>
       <button id="submit-btn">Submit</button>
       <div id="success-msg">Cool. Got it. Maybe.</div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- RELIGION SECTION -->
-    <section id="religion-section">
-      <h2>Bio Bios BayoU</h2>
-      <div id="religion-text">
-        <p>Janina's God is Indifference</p>
-        <p>Her priest is the artist known as prince</p>
-        <p>Her prayer is candy crush</p>
-        <p>Her Communion is jerk chicken and oxtail</p>
-        <p>And her good works, are ignoring you.</p>
-        <p>Attending Church is a Block party. Blocking you is optional. That's charity.</p>
-        <p>Her NY State of Mind is "Holy Shit!", but Apathetic.</p>
-        <p>Leaving church, she feel deeply "Peace be with YOU" and speaks it with grace: Cool.✌🏿</p>
-        <p class="religion-close">Heresy = BOOLSHIT</p>
-        <p class="religion-close">Note — Sincere apology, from the founder:</p>
-        <p class="religion-close">Is that aahight By U? 🤜🏿🤛🏻. She don't care 1 way or 0 nether.</p>
-      </div>
     </section>
 
     <!-- FOOTER -->
