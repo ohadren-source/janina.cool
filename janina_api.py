@@ -62,6 +62,12 @@ def home():
     return render_template('janina.cool.html')
 
 
+@app.route('/charculterie', methods=['GET'])
+def charculterie():
+    """Serve the CHARCULTERIE MENUFESTO."""
+    return render_template('charculterie.html')
+
+
 # ─────────────────────────────────────────────────────────────────────────
 # Health & Status
 # ─────────────────────────────────────────────────────────────────────────
