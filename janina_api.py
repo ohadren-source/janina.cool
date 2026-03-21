@@ -36,7 +36,7 @@ import janina_banks
 # Setup
 # ─────────────────────────────────────────────────────────────────────────
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 CORS(app)
 
 # Logging
