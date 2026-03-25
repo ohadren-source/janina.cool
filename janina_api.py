@@ -61,12 +61,14 @@ def home():
     """Serve the Janina frontend."""
     return render_template('janina.cool.html')
 
-
 @app.route('/charculterie', methods=['GET'])
 def charculterie():
     """Serve the CHARCULTERIE MENUFESTO."""
     return render_template('charculterie.html')
 
+@app.route('/miserico')
+def miserico():
+    return render_template('miserico.html')
 
 # ─────────────────────────────────────────────────────────────────────────
 # Health & Status
