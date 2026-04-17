@@ -32,6 +32,11 @@ import psycopg2
 # Import Janina's database layer
 import janina_banks
 
+# Absolute path to the directory containing this file — use for all
+# filesystem lookups so they are independent of the process CWD
+# (Railway/gunicorn may not run from the repo root).
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # ─────────────────────────────────────────────────────────────────────────
 # Setup
 # ─────────────────────────────────────────────────────────────────────────
@@ -72,7 +77,7 @@ def charculterie():
 def privacy():
     """Serve the consolidated Privacy Policy PDF."""
     return send_from_directory(
-        'templates',
+        os.path.join(BASE_DIR, 'templates'),
         'PRIVACY_POLICY_CONSOLIDATED.pdf',
         mimetype='application/pdf',
     )
@@ -82,7 +87,7 @@ def privacy():
 def support():
     """Serve the consolidated Support page PDF."""
     return send_from_directory(
-        'templates',
+        os.path.join(BASE_DIR, 'templates'),
         'SUPPORT_PAGE_CONSOLIDATED.pdf',
         mimetype='application/pdf',
     )
