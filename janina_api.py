@@ -25,7 +25,7 @@ import logging
 from datetime import datetime
 from typing import Dict, Tuple
 
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, send_from_directory
 from flask_cors import CORS
 import psycopg2
 
@@ -66,6 +66,26 @@ def home():
 def charculterie():
     """Serve the CHARCULTERIE MENUFESTO."""
     return render_template('charculterie.html')
+
+
+@app.route('/privacy', methods=['GET'])
+def privacy():
+    """Serve the consolidated Privacy Policy PDF."""
+    return send_from_directory(
+        'templates',
+        'PRIVACY_POLICY_CONSOLIDATED.pdf',
+        mimetype='application/pdf',
+    )
+
+
+@app.route('/support', methods=['GET'])
+def support():
+    """Serve the consolidated Support page PDF."""
+    return send_from_directory(
+        'templates',
+        'SUPPORT_PAGE_CONSOLIDATED.pdf',
+        mimetype='application/pdf',
+    )
 
 
 # ─────────────────────────────────────────────────────────────────────────
