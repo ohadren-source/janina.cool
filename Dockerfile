@@ -27,6 +27,7 @@ COPY janina_banks.py .
 COPY load_responses.py .
 COPY responses.json .
 COPY templates/ ./templates/
+COPY static/ ./static/
 
 # Create entrypoint script that runs release phase, then web phase
 RUN echo '#!/bin/bash\n\

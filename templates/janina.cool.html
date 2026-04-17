@@ -508,21 +508,40 @@
         return;
       }
 
-      // In production, this would POST to your API endpoint
-      // For now, just show success
-      document.getElementById('success-msg').style.display = 'block';
-      document.getElementById('email').value = '';
-      document.getElementById('name').value = '';
-      document.getElementById('subject').value = '';
-      document.getElementById('message').value = '';
       document.getElementById('submit-btn').disabled = true;
-      document.getElementById('submit-btn').textContent = 'Sent. Cool.';
+      document.getElementById('submit-btn').textContent = 'Sending...';
 
-      setTimeout(() => {
-        document.getElementById('success-msg').style.display = 'none';
+      fetch('/api/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, name, subject, message })
+      })
+      .then(res => res.json().then(data => ({ ok: res.ok, data })))
+      .then(({ ok, data }) => {
+        if (ok) {
+          document.getElementById('success-msg').textContent = 'Cool. Got it. Maybe.';
+          document.getElementById('success-msg').style.display = 'block';
+          document.getElementById('email').value = '';
+          document.getElementById('name').value = '';
+          document.getElementById('subject').value = '';
+          document.getElementById('message').value = '';
+          document.getElementById('submit-btn').textContent = 'Sent. Cool.';
+          setTimeout(() => {
+            document.getElementById('success-msg').style.display = 'none';
+            document.getElementById('submit-btn').disabled = false;
+            document.getElementById('submit-btn').textContent = 'Submit';
+          }, 3000);
+        } else {
+          alert(data.error || 'Something went wrong. Try again.');
+          document.getElementById('submit-btn').disabled = false;
+          document.getElementById('submit-btn').textContent = 'Submit';
+        }
+      })
+      .catch(() => {
+        alert('Could not reach the server. Try again.');
         document.getElementById('submit-btn').disabled = false;
         document.getElementById('submit-btn').textContent = 'Submit';
-      }, 3000);
+      });
     });
   </script>
 
