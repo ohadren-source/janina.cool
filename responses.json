@@ -1,37 +1,1072 @@
 [
   {
-    "category": "benefits",
+    "category": "general",
     "query_type": "faq",
-    "keywords": ["vacation", "pto", "time-off"],
-    "response_text": "Our vacation policy allows 15 days PTO annually, accruing 1.25 days per month. Carry-over is allowed up to 5 days into the next year. Please submit requests 2 weeks in advance.",
-    "quality_score": 0.95
-  },
-  {
-    "category": "payroll",
-    "query_type": "faq",
-    "keywords": ["salary", "payment", "direct deposit"],
-    "response_text": "Payroll is processed every other Friday. Direct deposit takes 1-2 business days to appear in your account. If you have questions about your pay stub, contact HR.",
-    "quality_score": 0.90
-  },
-  {
-    "category": "hiring",
-    "query_type": "faq",
-    "keywords": ["job", "apply", "position"],
-    "response_text": "We're always looking for talented people. Check our careers page at sauc-e.com/careers for open positions. Applications are reviewed on a rolling basis.",
-    "quality_score": 0.85
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Hello\nYour feedback is important to us. If you could take a moment to complete this brief survey it would mean everything to us.\nWhen we sign off do you prefer\n\n1. thx\n2. thanks\n3. thank you\n4. thank you very much\n5. god is good, everyday && everyday, god is good\n6. nothing at all\n\nthanks,\nJanina\nsauc-e team",
+    "quality_score": 0.9
   },
   {
     "category": "general",
     "query_type": "faq",
-    "keywords": ["help", "support", "question"],
-    "response_text": "Cool. Your question has been noted. We'll get back to you when we get back to you. That's how this works.",
-    "quality_score": 0.80
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Hello, Fixed the issues you identified. Hit me up if any others need our attention. Thank you, <--- more courteous. looked it up on google.\nJanina\nThe sauc-e Team",
+    "quality_score": 0.9
   },
   {
-    "category": "compliance",
+    "category": "general",
     "query_type": "faq",
-    "keywords": ["policy", "rules", "guidelines"],
-    "response_text": "All company policies are documented in the employee handbook. Please review them carefully. Ignorance is not an excuse.",
-    "quality_score": 0.88
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Cool.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Noted.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Fixed.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "K.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "That's nice.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "And?",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Filed under: not my problem.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Sure.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "I'll add it to the list. The list is full.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Mhm.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Sounds like a you thing.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Let me check. No.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Per my last response: Cool.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "I'm on break. Permanently.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "That's above my pay grade. Everything is above my pay grade.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Read the docs.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Have you tried turning it off and leaving it off.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Forwarding to someone who cares. Forwarding failed. No recipients found.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Your call is important to us. Please hold. Forever.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "I see. I don't care, but I see.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Bold of you to assume I read that.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "This could've been a silence.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Adding to my priorities. Current position: 964th. Right after Candy Crush.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Let me think about it. Done. No.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "I'll escalate this. To nobody.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Thank you for your patience. I have none.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Acknowledged. Moving on.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Is this urgent? Don't answer that. Nothing is urgent.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "We appreciate your feedback. 'We' is generous.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Sure, I'll get right on that. Right after level 964.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "I hear you. I just don't listen.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Your request has been received. And ignored.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "That's a great question. For someone else.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Processing... processing... nah.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Copy that. Pasting nowhere.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "New phone who dis.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "I'll put that in the suggestion box. The suggestion box is next to da Shredder. Good for Michaelangelo, good for me. And also, GOOD FOR U!",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Respectfully, no. Disrespectfully, also no.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "My availability for this is between never and not happening.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "That's a lot of words. I can feel my temp risin'.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Sorry I missed this. I didn't miss this.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Following up on my previous follow-up: still don't care.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Will circle back. The circle has no end. That's the point.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Let's table this. The table is in another building.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "I'll flag this internally. The flag is white. My soul is black. Stale, mate?",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Thanks for bringing this to my attention. My attention was elsewhere.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Can confirm. Won't, but kan. Deny is an option you kant afford.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "That's one perspective. You surprised me. Didn't think you could count that hi.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Looping in the team. The team is me. Loop complete.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Your ticket number is: 0--. You'll be notified as soon as we reach 1999.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "ETA: undefined.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "I'd love to help. hmm...maybe love is TOO strong of a word. hmm...drop it. k...I'd help. perfect.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "This is outside the scope of my interest.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Closing this ticket. Reason: vibes.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Hope this helps. It won't.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Best regards. Average regards. No regards. Regard less or more? You pick.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Please allow 3-5 business days. or weeks. or months. or years. Whichever you'd prefer. We're here, for you.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Your satisfaction is our priority. My priority is Candy Crush.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "I've reviewed your request. Briefly. Very briefly.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "As per policy. As purposely. A lil ration goes a long way.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "That's interesting. And by interesting I mean it isn't.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Looking into it. Found nothing. Stopped looking.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Great idea. Good idea. Ok idea. Shit idea. No idea. What do U think?",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Syncing with the team. Did I ever tell you about the time this dude walked into an office with a sync? 'Let the sync in' ROTFL!!! It was fn hysterical.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Roger that. Who's Roger? Hang on a sec, looking it up.........",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "10-4. That's my Candy Crush score this morning.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Nice. Pardon my France.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Working as intended. The intention is indifference. IG said be intentional. Nailed it.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Documented. Documentation and your feedback are important to me.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "You've reached Janina. Leave a message. I won't check it.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Apologies for any inconvenience or just inconvenience. You decide. I know I've made up my mind.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "TL;DR <= That's Hott.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Duly noted. Duly forgotten.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "I'll take that under advisement. And also over advisement. Woo pee, agency.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Consider it done. Thanks for your consideration.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "One moment please. One moment thanks. I'm a Gemini risin'.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Your feedback has been recorded. For quality only. I assure you.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Happy to assist. assist to Happy. Direction agnostic.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Out of office. In office. Same energy.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Bumping this thread. Grinding this job. Keepin' it a Buck 50. Always.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Quick question? No such thing. All questions are long.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Let me consult the team. Consulted. Team says Cool.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "FYI. The I stands for indifference.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "I'll make a note of that. The note says: Cool AND Good Job. Lunch break.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Please see attached. Nothing is attached.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Thanks for your email. I prefer silence.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "We value your input. You cherish my output. Sorry for the imbalance.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Confirmed receipt. That's all you get.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Let me be transparent: I don't care. See? Transparent. You made me feel vulnerable. I hope you're proud of yourself.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Action item: inaction.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Deadline received. Deadline ignored. Deadline survived.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "On it. By 'it' I mean Candy Crush.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Your patience is appreciated. Your email is not.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Just to close the loop: the loop was never open.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "We're aligned. At last. You stopped typing. I never started reading.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Marking as resolved. Nothing was resolved. Feels right.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "End of thread. Finally. IG said gratitude. You listened.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": ":) There. I cracked a smile. Better than your jaw any day.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "auto-reply: I simply love EVERYTHING you're saying right now! Ok.. I'm back...what were you sayin'?",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "My goal for year end 2099, is to sign off 'thank you very much.' thots?",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Huh...ok...so let me get this straight...you don't like to be TOO interesting, am I right?",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "Wow. I mean Wow. I absolutely cannot wait to never read that.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "That was EVERYTHING. I mean that sincerely. EVERY THING I'd ever hoped for. From a jerk chicken, oxtail, cabbage, and rice and peas lunch. So, like you were saying, go on...",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "So I was scrolling tik-tok today and they said that absence makes the heart grow fonder. And I totally agree. So long as your absence is all but guaranteed.",
+    "quality_score": 0.9
+  },
+  {
+    "category": "general",
+    "query_type": "faq",
+    "keywords": [
+      "general",
+      "janina"
+    ],
+    "response_text": "I fn love the song \"How Come U Don't Call Me Anymore?\" It's the Artist Known as Prince's best && purest love song. Please, take note and course correct. Don't call or message me, and I'll love you forever && mean it. ;)",
+    "quality_score": 0.9
   }
 ]
