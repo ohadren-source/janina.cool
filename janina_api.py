@@ -1,7 +1,7 @@
 """
 janina_api.py — Janina HR Platform API
 ======================================
-Simple Flask API that serves 108 HR responses and handles form submissions.
+Simple Flask API that serves HR responses and handles form submissions.
 Deploys directly to Railway.
 """
 

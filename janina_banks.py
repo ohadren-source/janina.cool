@@ -2,7 +2,7 @@
 janina_banks.py — HR Response Store + Customer Feedback + Email Submission Handler
 ====================================================================================
 Thin Postgres helper for:
-  - Storing 108 updated HR responses indexed by category/query type.
+  - Storing updated HR responses indexed by category/query type.
   - Logging customer complaints and feedback.
   - Storing email submissions from web form.
   - Quick retrieval of responses by domain/keyword.
@@ -46,7 +46,7 @@ def get_db_conn():
 def ensure_responses_table():
     """
     Idempotently create janina_responses if it doesn't exist yet.
-    Stores the 108 HR responses indexed by category and searchable keywords.
+    Stores HR responses indexed by category and searchable keywords.
     Safe to call on every startup.
     """
     sql = """

@@ -4,11 +4,11 @@ Janina is the anti-RILIE. She's here to help, we guess. Shrug.
 
 ## What's Included
 
-- **janina.cool.html** — The web interface (108 responses hardcoded)
+- **janina.cool.html** — The web interface (responses hardcoded)
 - **janina_api.py** — Flask API for handling submissions and chat
 - **janina_banks.py** — Postgres layer (responses, submissions, feedback)
 - **load_responses.py** — Bulk loader for responses into the database
-- **responses.json** — Your 108 responses (customize this)
+- **responses.json** — Your responses (customize this)
 - **Procfile** — Railway deployment config
 - **requirements.txt** — Python dependencies
 - **.gitignore** — What to exclude from git
@@ -61,7 +61,7 @@ Janina is the anti-RILIE. She's here to help, we guess. Shrug.
 
 ## Customize responses.json
 
-Edit `responses.json` to include your actual 108 responses. Format:
+Edit `responses.json` to include your actual responses. Format:
 
 ```json
 [
@@ -72,7 +72,7 @@ Edit `responses.json` to include your actual 108 responses. Format:
     "response_text": "Your response here",
     "quality_score": 0.95
   },
-  ... (repeat 108 times)
+  ... (repeat as needed)
 ]
 ```
 

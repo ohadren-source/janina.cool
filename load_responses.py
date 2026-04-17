@@ -1,5 +1,5 @@
 """
-load_responses.py — Bulk load 108 HR responses into Janina database
+load_responses.py — Bulk load HR responses into Janina database
 ===================================================================
 Run this once during initialization to populate janina_responses table.
 

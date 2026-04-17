@@ -34,7 +34,7 @@ RUN echo '#!/bin/bash\n\
 set -e\n\
 \n\
 # Release phase: load responses into database\n\
-echo "[release] Loading 108 responses..."\n\
+echo "[release] Loading responses..."\n\
 python load_responses.py --file responses.json\n\
 echo "[release] Responses loaded successfully"\n\
 \n\
