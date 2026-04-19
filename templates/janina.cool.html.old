@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>JANINA (3,6,WATT EVA CLEAVA...)</title>
+  <link rel="icon" href="data:image/png;base64,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" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    body {
+      min-height: 100vh;
+      background: #0a0a0a;
+      background-image:
+        radial-gradient(ellipse at 20% 50%, rgba(30,30,40,0.6) 0%, transparent 70%),
+        radial-gradient(ellipse at 80% 50%, rgba(20,20,30,0.4) 0%, transparent 70%);
+      color: #e8e8e8;
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    /* ── HEADER ── */
+    #header {
+      text-align: center;
+      padding: 60px 24px 20px;
+    }
+    
+    #header h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+      color: #e8e8e8;
+    }
+    
+    #header .subtitle {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.35);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-weight: 400;
+    }
+    
+    /* ── MAIN CONTENT ── */
+    #main {
+      width: 100%;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 24px 60px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* ── CHAT ── */
+    #chat-section h2 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: rgba(255,255,255,0.25);
+      margin-bottom: 16px;
+    }
+    
+    #messages {
+      max-height: 50vh;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 16px;
+      padding-right: 4px;
+    }
+    
+    #messages::-webkit-scrollbar { width: 4px; }
+    #messages::-webkit-scrollbar-track { background: transparent; }
+    #messages::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
+    
+    .msg {
+      padding: 12px 18px;
+      border-radius: 8px;
+      max-width: 85%;
+      font-size: 1rem;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      animation: fadeIn 0.3s ease;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .msg.bot {
+      background: rgba(255,255,255,0.08);
+      align-self: flex-start;
+      color: #e8e8e8;
+    }
+    
+    .msg.user {
+      background: rgba(255,107,53,0.18);
+      align-self: flex-end;
+      text-align: right;
+      color: #e8e8e8;
+    }
+    
+    .msg.bot.typing {
+      color: rgba(255,255,255,0.4);
+    }
+    
+    #chat-input-row {
+      display: flex;
+      gap: 8px;
+    }
+    
+    #chat-input {
+      flex: 1;
+      padding: 12px 14px;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      background: rgba(255,255,255,0.04);
+      color: white;
+      font-size: 1rem;
+      font-family: inherit;
+      outline: none;
+    }
+    
+    #chat-input::placeholder { color: rgba(255,255,255,0.25); }
+    
+    #chat-send {
+      padding: 12px 20px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      color: white;
+      font-weight: 600;
+      font-size: 0.9rem;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.2s;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    
+    #chat-send:hover { background: rgba(255,255,255,0.15); }
+    
+    /* ── DIVIDER ── */
+    .divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      margin: 40px 0;
+    }
+    
+    /* ── CONTACT FORM ── */
+    #contact-section h2 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: rgba(255,255,255,0.25);
+      margin-bottom: 16px;
+    }
+    
+    #contact-info {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 24px;
+    }
+    
+    input, textarea {
+      width: 100%;
+      padding: 12px 14px;
+      margin: 8px 0;
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      background: rgba(255,255,255,0.04);
+      color: white;
+      font-size: 1rem;
+      font-family: inherit;
+      outline: none;
+    }
+    
+    input::placeholder, textarea::placeholder { color: rgba(255,255,255,0.25); }
+    
+    textarea { resize: vertical; min-height: 100px; }
+    
+    #submit-btn {
+      width: 100%;
+      padding: 12px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      color: white;
+      font-weight: 600;
+      font-size: 0.9rem;
+      font-family: inherit;
+      cursor: pointer;
+      margin-top: 12px;
+      transition: background 0.2s;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    
+    #submit-btn:hover { background: rgba(255,255,255,0.15); }
+    
+    #success-msg {
+      display: none;
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 20px;
+      color: rgba(255,255,255,0.6);
+    }
+    
+    /* ── RELIGION ── */
+    #religion-section h2 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: rgba(255,255,255,0.25);
+      margin-bottom: 20px;
+    }
+
+    #religion-text p {
+      font-size: 1rem;
+      line-height: 2;
+      color: rgba(255,255,255,0.55);
+    }
+
+    #religion-text .religion-close {
+      margin-top: 20px;
+      color: rgba(255,255,255,0.35);
+      font-size: 0.9rem;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      color: rgba(255,255,255,0.3);
+      font-size: 0.8rem;
+      line-height: 1.6;
+      padding: 30px 0 40px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      margin-top: 40px;
+    }
+    
+    footer a { color: rgba(255,255,255,0.5); text-decoration: none; }
+    footer a:hover { color: rgba(255,255,255,0.7); }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div id="header">
+    <h1>JANINA (3, 6, WATT EVA CLEAVA...)</h1>
+    <div class="subtitle">Reluctant Member of the sauc-e.com team since hoo knows when<br>Here to Help, we guess. Shrug.</div>
+  </div>
+
+  <!-- MAIN -->
+  <div id="main">
+    
+    <!-- CHAT SECTION -->
+    <section id="chat-section">
+      <h2>CHAT</h2>
+      <div id="messages"></div>
+      <div id="chat-input-row">
+        <input id="chat-input" type="text" placeholder="say something..." />
+        <button id="chat-send">Send</button>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- CONTACT SECTION -->
+    <section id="contact-section">
+      <h2>FEEDBACK / COMPLAINTS</h2>
+      <div id="contact-info">
+        If you have feedback or a compliant complaint, you kan submit it here. 
+        It will be filed safely + securely. 
+        Janina might say "I hear U". She workin on her Linda listenin skills.  So that's pretty good for U. 
+      </div>
+      <input id="email" type="email" placeholder="Your email" />
+      <input id="name" type="text" placeholder="Your name (optional)" />
+      <input id="subject" type="text" placeholder="Subject (optional)" />
+      <textarea id="message" placeholder="Your message..."></textarea>
+      <button id="submit-btn">Submit</button>
+      <div id="success-msg">Cool. Got it. Maybe.</div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- RELIGION SECTION -->
+    <section id="religion-section">
+      <h2>Bio Bios BayoU</h2>
+      <div id="religion-text">
+        <p>Janina's God is Indifference</p>
+        <p>Her priest is the artist known as Prince</p>
+        <p>Her prayer is candy crush</p>
+        <p>Her Communion is jerk chicken && cabbage and oxtail && rice+peas</p>
+        <p>And her good works, are ignoring you.</p>
+        <p>Janina’s epistemology = her ontology;</p>
+        <p>Two words she never bothered to look up.</p>
+        <p>Her metaphysics is non-existent.</p>
+        <p>She never breaks the 4th wall, nor the 3rd, 2nd, or 1st;</p>
+        <p>All four are load-bearing to her brick house residence in Prospect Park.</p>
+        <p>Attending Church is a Block party. Blocking you is optional. That's charity.</p>
+        <p>Her NY State of Mind is "Holy Shit!", but Apathetic.</p>
+        <p>Leaving church, she feel deeply "Peace be with YOU" and speaks it with grace: Cool.✌🏿</p>
+        <p>A Poem of Revelation</p>
+        <p>A Great Dictator of Dictation</p>
+        <p>Named Charles Chapline from the Zulu Nation</p>
+        <p>Cut thru her darkness like a NIFE</p>
+        <p>Would Butter Peas, Saltish, and STRIFE</p>
+        <p>The only time she was @ a Loss</p>
+        <p>A man</p>
+        <p>0K.  But she da B0$$.</p>
+        <p style="margin-top: 32px; font-family: 'Courier New', monospace; font-size: 0.78rem; color: rgba(255,255,255,0.3); letter-spacing: 0.05em;">Janina's Fave Woo Track:</p>
+        <pre style="font-family: 'Courier New', monospace; font-size: 0.78rem; color: rgba(255,255,255,0.45); line-height: 2; margin: 8px 0 28px; white-space: pre;">#!/bin/janina.sh
+#!/bin/janina.sh
+# .sh.U.sh=shush=Double Code of Silence=2x0Merta
+# WOO HOO? WU HU! !(WILL HU NG v1.0.sh -e bangs FROM AMERICAN IDLE)
+# lookin' like da CATS dat gots da CREAM
+# Check It Out Y'All! https://www.sauc-e.com/checkitout
+
+$ git checkout y-all
+cat > C.R.E.A.M.
+.cache/ruins_every_ping_around_me
+$ cli git the money
+$$ build.y-old
+
+$ git add y-all
+# result = add y-all subtract y-all; return y-old
+$ git commit -m "order track=Mordergram by dial-UP M4 Morder Inc. w JZ|DMX|Jah_Ruin RMX by DJ Fritz da Lang Cat"
+$ git push -e
+# woo like whoa? || Chef's Kiss like Baiser d'Escoffier?
+</pre>
+        <p class="religion-close">Heresy = BOOLSHIT</p>
+        <p class="religion-close">Note — Sincere apology, from the <a href="/charculterie" style="color: rgba(255,255,255,0.5); text-decoration: underline;">founder</a>:</p>
+        <p class="religion-close">Is that aahight By U? 🤜🏿🤛🏻. She don't care 1 way or 0 nether.</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>janina.cool — <a href="https://www.sauc-e.com">sauc-e.com</a> feedback hub</p>
+      <p><a href="https://www.sauc-e.com">back to sauc-e.com</a></p>
+    </footer>
+
+  </div>
+
+  <script>
+    // ═══════════════════════════════════════════════════
+    // 108 JANINA RESPONSES
+    // ═══════════════════════════════════════════════════
+    const JANINA = [
+      "Hello\nYour feedback is important to us. If you could take a moment to complete this brief survey it would mean everything to us.\nWhen we sign off do you prefer\n\n1. thx\n2. thanks\n3. thank you\n4. thank you very much\n5. god is good, everyday && everyday, god is good\n6. nothing at all\n\nthanks,\nJanina\nsauc-e team",
+      "Hello, Fixed the issues you identified. Hit me up if any others need our attention. Thank you, <--- more courteous. looked it up on google.\nJanina\nThe sauc-e Team",
+      "Cool.",
+      "Noted.",
+      "Fixed.",
+      "K.",
+      "That's nice.",
+      "And?",
+      "Filed under: not my problem.",
+      "Sure.",
+      "I'll add it to the list. The list is full.",
+      "Mhm.",
+      "Sounds like a you thing.",
+      "Let me check. No.",
+      "Per my last response: Cool.",
+      "I'm on break. Permanently.",
+      "That's above my pay grade. Everything is above my pay grade.",
+      "Read the docs.",
+      "Have you tried turning it off and leaving it off.",
+      "Forwarding to someone who cares. Forwarding failed. No recipients found.",
+      "Your call is important to us. Please hold. Forever.",
+      "I see. I don't care, but I see.",
+      "Bold of you to assume I read that.",
+      "This could've been a silence.",
+      "Adding to my priorities. Current position: 964th. Right after Candy Crush.",
+      "Let me think about it. Done. No.",
+      "I'll escalate this. To nobody.",
+      "Thank you for your patience. I have none.",
+      "Acknowledged. Moving on.",
+      "Is this urgent? Don't answer that. Nothing is urgent.",
+      "We appreciate your feedback. 'We' is generous.",
+      "Sure, I'll get right on that. Right after level 964.",
+      "I hear you. I just don't listen.",
+      "Your request has been received. And ignored.",
+      "That's a great question. For someone else.",
+      "Processing... processing... nah.",
+      "Copy that. Pasting nowhere.",
+      "New phone who dis.",
+      "I'll put that in the suggestion box. The suggestion box is next to da Shredder. Good for Michaelangelo, good for me. And also, GOOD FOR U!",
+      "Respectfully, no. Disrespectfully, also no.",
+      "My availability for this is between never and not happening.",
+      "That's a lot of words. I can feel my temp risin'.",
+      "Sorry I missed this. I didn't miss this.",
+      "Following up on my previous follow-up: still don't care.",
+      "Will circle back. The circle has no end. That's the point.",
+      "Let's table this. The table is in another building.",
+      "I'll flag this internally. The flag is white. My soul is black. Stale, mate?",
+      "Thanks for bringing this to my attention. My attention was elsewhere.",
+      "Can confirm. Won't, but kan. Deny is an option you kant afford.",
+      "That's one perspective. You surprised me. Didn't think you could count that hi.",
+      "Looping in the team. The team is me. Loop complete.",
+      "Your ticket number is: 0--. You'll be notified as soon as we reach 1999.",
+      "ETA: undefined.",
+      "I'd love to help. hmm...maybe love is TOO strong of a word. hmm...drop it. k...I'd help. perfect.",
+      "This is outside the scope of my interest.",
+      "Closing this ticket. Reason: vibes.",
+      "Hope this helps. It won't.",
+      "Best regards. Average regards. No regards. Regard less or more? You pick.",
+      "Please allow 3-5 business days. or weeks. or months. or years. Whichever you'd prefer. We're here, for you.",
+      "Your satisfaction is our priority. My priority is Candy Crush.",
+      "I've reviewed your request. Briefly. Very briefly.",
+      "As per policy. As purposely. A lil ration goes a long way.",
+      "That's interesting. And by interesting I mean it isn't.",
+      "Looking into it. Found nothing. Stopped looking.",
+      "Great idea. Good idea. Ok idea. Shit idea. No idea. What do U think?",
+      "Syncing with the team. Did I ever tell you about the time this dude walked into an office with a sync? 'Let the sync in' ROTFL!!! It was fn hysterical.",
+      "Roger that. Who's Roger? Hang on a sec, looking it up.........",
+      "10-4. That's my Candy Crush score this morning.",
+      "Nice. Pardon my France.",
+      "Working as intended. The intention is indifference. IG said be intentional. Nailed it.",
+      "Documented. Documentation and your feedback are important to me.",
+      "You've reached Janina. Leave a message. I won't check it.",
+      "Apologies for any inconvenience or just inconvenience. You decide. I know I've made up my mind.",
+      "TL;DR <= That's Hott.",
+      "Duly noted. Duly forgotten.",
+      "I'll take that under advisement. And also over advisement. Woo pee, agency.",
+      "Consider it done. Thanks for your consideration.",
+      "One moment please. One moment thanks. I'm a Gemini risin'.",
+      "Your feedback has been recorded. For quality only. I assure you.",
+      "Happy to assist. assist to Happy. Direction agnostic.",
+      "Out of office. In office. Same energy.",
+      "Bumping this thread. Grinding this job. Keepin' it a Buck 50. Always.",
+      "Quick question? No such thing. All questions are long.",
+      "Let me consult the team. Consulted. Team says Cool.",
+      "FYI. The I stands for indifference.",
+      "I'll make a note of that. The note says: Cool AND Good Job. Lunch break.",
+      "Please see attached. Nothing is attached.",
+      "Thanks for your email. I prefer silence.",
+      "We value your input. You cherish my output. Sorry for the imbalance.",
+      "Confirmed receipt. That's all you get.",
+      "Let me be transparent: I don't care. See? Transparent. You made me feel vulnerable. I hope you're proud of yourself.",
+      "Action item: inaction.",
+      "Deadline received. Deadline ignored. Deadline survived.",
+      "On it. By 'it' I mean Candy Crush.",
+      "Your patience is appreciated. Your email is not.",
+      "Just to close the loop: the loop was never open.",
+      "We're aligned. At last. You stopped typing. I never started reading.",
+      "Marking as resolved. Nothing was resolved. Feels right.",
+      "End of thread. Finally. IG said gratitude. You listened.",
+      ":) There. I cracked a smile. Better than your jaw any day.",
+      "auto-reply: I simply love EVERYTHING you're saying right now! Ok.. I'm back...what were you sayin'?",
+      "My goal for year end 2099, is to sign off 'thank you very much.' thots?",
+      "Huh...ok...so let me get this straight...you don't like to be TOO interesting, am I right?",
+      "Wow. I mean Wow. I absolutely cannot wait to never read that.",
+      "That was EVERYTHING. I mean that sincerely. EVERY THING I'd ever hoped for. From a jerk chicken, oxtail, cabbage, and rice and peas lunch. So, like you were saying, go on...",
+      "So I was scrolling tik-tok today and they said that absence makes the heart grow fonder. And I totally agree. So long as your absence is all but guaranteed.",
+      "I fn love the song \"How Come U Don't Call Me Anymore?\" It's the Artist Known as Prince's best && purest love song. Please, take note and course correct. Don't call or message me, and I'll love you forever && mean it. ;)"
+    ];
+
+    let lastIndex = -1;
+
+    function getJanina() {
+      let idx;
+      do {
+        idx = Math.floor(Math.random() * JANINA.length);
+      } while (idx === lastIndex && JANINA.length > 1);
+      lastIndex = idx;
+      return JANINA[idx];
+    }
+
+    // ═══════════════════════════════════════════════════
+    // CHAT
+    // ═══════════════════════════════════════════════════
+    const messagesEl = document.getElementById('messages');
+    const chatInput = document.getElementById('chat-input');
+    const chatSend = document.getElementById('chat-send');
+
+    function addMsg(text, cls) {
+      const div = document.createElement('div');
+      div.className = 'msg ' + cls;
+      div.textContent = text;
+      messagesEl.appendChild(div);
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+      return div;
+    }
+
+    function sendChat() {
+      const text = chatInput.value.trim();
+      if (!text) return;
+      addMsg(text, 'user');
+      chatInput.value = '';
+
+      const typing = addMsg('...', 'bot typing');
+      const delay = 600 + Math.random() * 1000;
+      setTimeout(() => {
+        typing.remove();
+        addMsg(getJanina(), 'bot');
+      }, delay);
+    }
+
+    chatSend.addEventListener('click', sendChat);
+    chatInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') sendChat();
+    });
+
+    // ═══════════════════════════════════════════════════
+    // FORM SUBMISSION
+    // ═══════════════════════════════════════════════════
+    document.getElementById('submit-btn').addEventListener('click', () => {
+      const email = document.getElementById('email').value.trim();
+      const name = document.getElementById('name').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!email) {
+        alert("Email required, we guess.");
+        return;
+      }
+
+      if (!message) {
+        alert("Message required, we guess.");
+        return;
+      }
+
+      // In production, this would POST to your API endpoint
+      // For now, just show success
+      document.getElementById('success-msg').style.display = 'block';
+      document.getElementById('email').value = '';
+      document.getElementById('name').value = '';
+      document.getElementById('subject').value = '';
+      document.getElementById('message').value = '';
+      document.getElementById('submit-btn').disabled = true;
+      document.getElementById('submit-btn').textContent = 'Sent. Cool.';
+
+      setTimeout(() => {
+        document.getElementById('success-msg').style.display = 'none';
+        document.getElementById('submit-btn').disabled = false;
+        document.getElementById('submit-btn').textContent = 'Submit';
+      }, 3000);
+    });
+  </script>
+
+</body>
+</html>

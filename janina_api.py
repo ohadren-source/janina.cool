@@ -8,11 +8,14 @@ Environment variables:
   - DATABASE_URL: Postgres connection string
   - FLASK_ENV: 'production' or 'development'
   - LOG_LEVEL: 'INFO', 'DEBUG', etc.
+  - GMAIL_SENDER_ADDRESS: Gmail address used to send submissions (see janina_mailer.py)
+  - GMAIL_APP_PASSWORD: Gmail App Password
+  - JANINA_INBOX: Destination address (default: 36nife@gmail.com)
 
 Routes:
   - GET  /api/responses                  → get by category or all
   - GET  /api/responses/search           → search by keyword
-  - POST /api/submit                     → submit web form
+  - POST /api/submit                     → submit web form (stores to db + emails inbox)
   - GET  /api/submissions                → list submissions
   - GET  /api/feedback                   → list feedback
   - GET  /api/stats                      → health check
@@ -31,6 +34,9 @@ import psycopg2
 
 # Import Janina's database layer
 import janina_banks
+
+# Import Janina's email layer (v3.1.2 — form no longer goes into the void)
+import janina_mailer
 
 # ─────────────────────────────────────────────────────────────────────────
 # Setup
@@ -163,7 +169,8 @@ def search_responses():
 def submit_form():
     """
     Submit web form with email and message.
-    
+    Stores to db AND emails 36nife@gmail.com in janina's voice.
+
     Expected JSON:
       {
         "email": "customer@example.com",
@@ -194,7 +201,7 @@ def submit_form():
         ip_address = request.remote_addr
         user_agent = request.headers.get('User-Agent', '')
         
-        # Store submission
+        # Store submission (primary persistence)
         success = janina_banks.store_submission(
             email=email,
             name=name or None,
@@ -205,15 +212,31 @@ def submit_form():
             user_agent=user_agent,
         )
         
-        if success:
-            logger.info(f"Form submission received from {email}")
-            return jsonify({
-                'status': 'received',
-                'email': email,
-                'timestamp': datetime.utcnow().isoformat(),
-            }), 201
-        else:
+        if not success:
             return jsonify({'error': 'Failed to store submission'}), 500
+
+        logger.info(f"Form submission stored from {email}")
+
+        # Fire email to 36nife@gmail.com (secondary; never blocks user response).
+        # janina_mailer never raises — it logs and returns False on any problem.
+        email_sent = janina_mailer.send_submission_email({
+            'email': email,
+            'name': name,
+            'subject': subject,
+            'message': message,
+            'ip_address': ip_address,
+            'user_agent': user_agent,
+        })
+        if email_sent:
+            logger.info(f"Form submission emailed to janina inbox")
+        else:
+            logger.info(f"Form submission email skipped or failed (db write succeeded)")
+
+        return jsonify({
+            'status': 'received',
+            'email': email,
+            'timestamp': datetime.utcnow().isoformat(),
+        }), 201
     
     except json.JSONDecodeError:
         return jsonify({'error': 'Invalid JSON'}), 400
