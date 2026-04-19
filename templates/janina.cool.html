@@ -18,33 +18,27 @@
       color: #e8e8e8;
       font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       display: flex;
+      flex-direction: column;
       -webkit-font-smoothing: antialiased;
     }
     
     /* ── HEADER ── */
     #header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      padding: 24px;
-      background: linear-gradient(180deg, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.7) 100%);
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-      z-index: 50;
       text-align: center;
+      padding: 60px 24px 20px;
     }
     
     #header h1 {
-      font-size: 1.8rem;
+      font-size: 2.4rem;
       font-weight: 700;
       letter-spacing: 0.08em;
-      margin-bottom: 4px;
+      margin-bottom: 8px;
       color: #e8e8e8;
     }
     
     #header .subtitle {
       font-size: 0.75rem;
-      color: rgba(255,255,255,0.4);
+      color: rgba(255,255,255,0.35);
       text-transform: uppercase;
       letter-spacing: 0.15em;
       font-weight: 400;
@@ -55,7 +49,7 @@
       width: 100%;
       max-width: 980px;
       margin: 0 auto;
-      padding: 140px 24px 60px;
+      padding: 0 24px 60px;
       display: flex;
       flex-direction: column;
     }
@@ -282,8 +276,9 @@
     <section id="contact-section">
       <h2>FEEDBACK / COMPLAINTS</h2>
       <div id="contact-info">
-        If you have feedback or a complaint, you can submit it here. It will be filed under: not my problem. 
-        But we'll listen, we guess.
+        If you have feedback or a compliant complaint, you kan submit it here. 
+        It will be filed safely + securely. 
+        Janina might say "I hear U". She workin on her Linda listenin skills.  So that's pretty good for U. 
       </div>
       <input id="email" type="email" placeholder="Your email" />
       <input id="name" type="text" placeholder="Your name (optional)" />
@@ -300,21 +295,46 @@
       <h2>Bio Bios BayoU</h2>
       <div id="religion-text">
         <p>Janina's God is Indifference</p>
-        <p>Her priest is the artist known as prince</p>
+        <p>Her priest is the artist known as Prince</p>
         <p>Her prayer is candy crush</p>
         <p>Her Communion is jerk chicken && cabbage and oxtail && rice+peas</p>
         <p>And her good works, are ignoring you.</p>
+        <p>Janina’s epistemology = her ontology;</p>
+        <p>Two words she never bothered to look up.</p>
+        <p>Her metaphysics is non-existent.</p>
+        <p>She never breaks the 4th wall, nor the 3rd, 2nd, or 1st;</p>
+        <p>All four are load-bearing to her brick house residence in Prospect Park.</p>
         <p>Attending Church is a Block party. Blocking you is optional. That's charity.</p>
         <p>Her NY State of Mind is "Holy Shit!", but Apathetic.</p>
         <p>Leaving church, she feel deeply "Peace be with YOU" and speaks it with grace: Cool.✌🏿</p>
         <p>A Poem of Revelation</p>
         <p>A Great Dictator of Dictation</p>
         <p>Named Charles Chapline from the Zulu Nation</p>
-        <p>Cut through her darkness like a NIFE</p>
-        <p>Thru Butter Peas, Saltish, and STRIFE</p>
+        <p>Cut thru her darkness like a NIFE</p>
+        <p>Would Butter Peas, Saltish, and STRIFE</p>
         <p>The only time she was @ a Loss</p>
         <p>A man</p>
         <p>0K.  But she da B0$$.</p>
+        <p style="margin-top: 32px; font-family: 'Courier New', monospace; font-size: 0.78rem; color: rgba(255,255,255,0.3); letter-spacing: 0.05em;">Janina's Fave Woo Track:</p>
+        <pre style="font-family: 'Courier New', monospace; font-size: 0.78rem; color: rgba(255,255,255,0.45); line-height: 2; margin: 8px 0 28px; white-space: pre;">#!/bin/janina.sh
+#!/bin/janina.sh
+# .sh.U.sh=shush=Double Code of Silence=2x0Merta
+# WOO HOO? WU HU! !(WILL HU NG v1.0.sh -e bangs FROM AMERICAN IDLE)
+# lookin' like da CATS dat gots da CREAM
+# Check It Out Y'All! https://www.sauc-e.com/checkitout
+
+$ git checkout y-all
+cat > C.R.E.A.M.
+.cache/ruins_every_ping_around_me
+$ cli git the money
+$$ build.y-old
+
+$ git add y-all
+# result = add y-all subtract y-all; return y-old
+$ git commit -m "order track=Mordergram by dial-UP M4 Morder Inc. w JZ|DMX|Jah_Ruin RMX by DJ Fritz da Lang Cat"
+$ git push -e
+# woo like whoa? || Chef's Kiss like Baiser d'Escoffier?
+</pre>
         <p class="religion-close">Heresy = BOOLSHIT</p>
         <p class="religion-close">Note — Sincere apology, from the <a href="/charculterie" style="color: rgba(255,255,255,0.5); text-decoration: underline;">founder</a>:</p>
         <p class="religion-close">Is that aahight By U? 🤜🏿🤛🏻. She don't care 1 way or 0 nether.</p>
@@ -490,58 +510,72 @@
     });
 
     // ═══════════════════════════════════════════════════
-    // FORM SUBMISSION
+    // FORM SUBMISSION — now actually POSTs to /api/submit
     // ═══════════════════════════════════════════════════
-    document.getElementById('submit-btn').addEventListener('click', () => {
-      const email = document.getElementById('email').value.trim();
-      const name = document.getElementById('name').value.trim();
-      const subject = document.getElementById('subject').value.trim();
-      const message = document.getElementById('message').value.trim();
+    document.getElementById('submit-btn').addEventListener('click', async () => {
+      const emailEl   = document.getElementById('email');
+      const nameEl    = document.getElementById('name');
+      const subjectEl = document.getElementById('subject');
+      const messageEl = document.getElementById('message');
+      const btn       = document.getElementById('submit-btn');
+      const successEl = document.getElementById('success-msg');
+
+      const email   = emailEl.value.trim();
+      const name    = nameEl.value.trim();
+      const subject = subjectEl.value.trim();
+      const message = messageEl.value.trim();
 
       if (!email) {
         alert("Email required, we guess.");
         return;
       }
-
       if (!message) {
         alert("Message required, we guess.");
         return;
       }
 
-      document.getElementById('submit-btn').disabled = true;
-      document.getElementById('submit-btn').textContent = 'Sending...';
+      // Lock the button while we try
+      btn.disabled = true;
+      const originalText = btn.textContent;
+      btn.textContent = 'Sendin...';
 
-      fetch('/api/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, name, subject, message })
-      })
-      .then(res => res.json().then(data => ({ ok: res.ok, data })))
-      .then(({ ok, data }) => {
-        if (ok) {
-          document.getElementById('success-msg').textContent = 'Cool. Got it. Maybe.';
-          document.getElementById('success-msg').style.display = 'block';
-          document.getElementById('email').value = '';
-          document.getElementById('name').value = '';
-          document.getElementById('subject').value = '';
-          document.getElementById('message').value = '';
-          document.getElementById('submit-btn').textContent = 'Sent. Cool.';
-          setTimeout(() => {
-            document.getElementById('success-msg').style.display = 'none';
-            document.getElementById('submit-btn').disabled = false;
-            document.getElementById('submit-btn').textContent = 'Submit';
-          }, 3000);
-        } else {
-          alert(data.error || 'Something went wrong. Try again.');
-          document.getElementById('submit-btn').disabled = false;
-          document.getElementById('submit-btn').textContent = 'Submit';
+      try {
+        const response = await fetch('/api/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, name, subject, message })
+        });
+
+        if (!response.ok) {
+          // Backend returned an error — don't fake success
+          const errPayload = await response.json().catch(() => ({}));
+          alert("Didn't take. Try again later. " + (errPayload.error || ''));
+          btn.disabled = false;
+          btn.textContent = originalText;
+          return;
         }
-      })
-      .catch(() => {
-        alert('Could not reach the server. Try again.');
-        document.getElementById('submit-btn').disabled = false;
-        document.getElementById('submit-btn').textContent = 'Submit';
-      });
+
+        // Success — clear form, show the janina success line, reset after 3s
+        emailEl.value   = '';
+        nameEl.value    = '';
+        subjectEl.value = '';
+        messageEl.value = '';
+        successEl.style.display = 'block';
+        btn.textContent = 'Sent. Cool.';
+
+        setTimeout(() => {
+          successEl.style.display = 'none';
+          btn.disabled = false;
+          btn.textContent = originalText;
+        }, 3000);
+
+      } catch (err) {
+        // Network or JSON error
+        console.error('janina.cool submit error:', err);
+        alert("Network ain't cooperating. Try again in a minute.");
+        btn.disabled = false;
+        btn.textContent = originalText;
+      }
     });
   </script>
 
