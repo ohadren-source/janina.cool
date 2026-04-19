@@ -24,6 +24,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY janina_api.py .
 COPY janina_banks.py .
+COPY janina_mailer.py .
 COPY load_responses.py .
 COPY responses.json .
 COPY templates/ ./templates/
@@ -45,6 +46,13 @@ exec gunicorn -w 4 -b 0.0.0.0:${PORT:-5000} janina_api:app\n\
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD curl -f http://localhost:${PORT:-5000}/health || exit 1
+
+# Expose port (Railway will override with $PORT env var)
+EXPOSE 5000
+
+# Run entrypoint
+ENTRYPOINT ["/app/entrypoint.sh"]
+
 
 # Expose port (Railway will override with $PORT env var)
 EXPOSE 5000
